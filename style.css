@@ -1,0 +1,113 @@
+@font-face {
+    font-family: pt-serif;
+    src: url(./fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+/* main section css*/
+main {
+    flex: 1;
+    margin-top: 4%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.text-section .col-left h1 {
+    font-family: 'pt-serif';
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+
+.text-section .col-right h2 {
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.text-section .col-right p {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.team-images figure img {
+    width: 238px;
+    height: 341px;
+}
+
+.team-images figure figcaption {
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+figure {
+    margin: 20px;
+}
+
+.team-images {
+    justify-content: space-between;
+}
+
+/* .img-1::after {
+    content: "manager";
+    font-family: 'pt-serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    transform: rotate(90deg);
+    position: absolute;
+} */
+
+
+/* footer css */
+footer {
+    height: 30px;
+    text-align: center;
+}
