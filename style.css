@@ -10,43 +10,41 @@
 
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin: auto;
-}
-
-/* main section css*/
-main {
-    flex: 1;
-    margin-top: 4%;
+    width: 84%;
+    /* width is changed as per requirement*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .col {
+    flex: 0 0 auto;
     width: 50%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
+/* above css code is as per bootstrap and html structure too, do use while creating pages if not using bootstrap */
+/* main section css*/
+.text-section {
+    padding-top: 5%;
+    justify-content: space-between;
+}
+
+.col-left,
+.col-right {
+    width: 35%;
 }
 
 .text-section .col-left h1 {
@@ -73,9 +71,12 @@ h6 {
     color: #000000;
 }
 
+figure {
+    width: 30%;
+}
+
 .team-images figure img {
-    width: 238px;
-    height: 341px;
+    width: 100%;
 }
 
 .team-images figure figcaption {
@@ -85,15 +86,17 @@ h6 {
     color: #000000;
 }
 
-figure {
-    margin: 20px;
-}
-
 .team-images {
+    padding-top: 5%;
     justify-content: space-between;
 }
 
-/* .img-1::after {
+.team-images .img-2,
+.team-images .img-5 {
+    margin-top: 13%;
+}
+
+.img-1::after {
     content: "manager";
     font-family: 'pt-serif';
     font-weight: 400;
@@ -103,11 +106,38 @@ figure {
     color: #000000;
     transform: rotate(90deg);
     position: absolute;
-} */
+}
 
 
 /* footer css */
 footer {
     height: 30px;
     text-align: center;
+    line-height: 30px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .col-left,
+    .col-right {
+        width: 66%;
+    }
+
+    .col-right {
+        padding-top: 5%;
+    }
+
+    .team-images figure {
+        width: 47%;
+    }
+
+    .team-images .img-4,
+    .team-images .img-6 {
+        margin-top: 13%;
+    }
+
+    .team-images .img-5 {
+        margin-top: 0;
+    }
 }
