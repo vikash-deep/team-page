@@ -8,6 +8,11 @@
     src: url(./fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 
 * {
     margin: 0;
@@ -73,6 +78,7 @@
 
 figure {
     width: 30%;
+    margin-top: 3%;
 }
 
 .team-images figure img {
@@ -96,7 +102,7 @@ figure {
     margin-top: 13%;
 }
 
-.img-1::after {
+/* .img-1::after {
     content: "manager";
     font-family: 'pt-serif';
     font-weight: 400;
@@ -106,7 +112,7 @@ figure {
     color: #000000;
     transform: rotate(90deg);
     position: absolute;
-}
+} */
 
 
 /* footer css */
@@ -114,6 +120,7 @@ footer {
     height: 30px;
     text-align: center;
     line-height: 30px;
+    font-family: 'montserrat';
 }
 
 
